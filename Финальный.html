@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Отчёт по рекламе за месяц — Магнум</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700;800&display=swap">
+<style>
+:root{--bg:#f4f6fb;--sf:#ffffff;--ink:#12141c;--mu:#5b6172;--bd:#e1e5ef;--ac:#2f5bff;--kb:#12141c;--kf:#f4f6fb;--ka:#8fa8ff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1118;--sf:#181b26;--ink:#eef0f6;--mu:#9aa1b4;--bd:#2a2f40;--ac:#8fa8ff;--kb:#222842;--kf:#eef0f6;--ka:#8fa8ff}}
+:root[data-theme="dark"]{--bg:#0f1118;--sf:#181b26;--ink:#eef0f6;--mu:#9aa1b4;--bd:#2a2f40;--ac:#8fa8ff;--kb:#222842;--kf:#eef0f6;--ka:#8fa8ff}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Onest',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;font-size:17px;line-height:1.5}
+.wrap{max-width:1040px;margin:0 auto;padding:40px 20px 72px}
+.mu{color:var(--mu)}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.1;font-weight:800;margin:8px 0 12px}
+h2{font-size:clamp(26px,4vw,36px);line-height:1.15;font-weight:800;margin:0 0 6px}
+h3{font-size:20px;font-weight:700;margin:0 0 10px}
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:18px}
+button{font:inherit;font-weight:500;cursor:pointer;border:1px solid var(--bd);background:var(--sf);color:var(--ink);padding:9px 16px;border-radius:10px}
+button:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+#hint{font-size:15px;color:var(--mu)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:14px 0;margin:28px 0 8px;display:flex;gap:8px;overflow-x:auto;border-bottom:1px solid var(--bd)}
+nav button{white-space:nowrap}
+nav button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tab{display:none;padding-top:24px}
+.tab.active{display:block}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin:24px 0}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin:24px 0}
+.kpi{background:var(--kb);color:var(--kf);border-radius:16px;padding:22px}
+.kpi b{display:block;font-size:34px;line-height:1.1;font-weight:800;color:var(--ka);font-variant-numeric:tabular-nums;white-space:nowrap}
+.kpi span{display:block;margin-top:6px;font-size:16px}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:16px;padding:26px}
+.big{font-size:72px;line-height:1;font-weight:800;color:var(--ac);margin:4px 0 10px;font-variant-numeric:tabular-nums}
+.st{font-weight:700;font-size:19px;line-height:1.35;margin:0 0 8px}
+.bar{background:var(--ink);color:var(--bg);border-radius:14px;padding:18px 22px;font-weight:700;margin:24px 0}
+.tw{overflow-x:auto;margin:16px 0}
+table{border-collapse:collapse;width:100%;min-width:520px}
+th{text-align:left;font-weight:500;color:var(--mu);font-size:15px;padding:10px 12px;border-bottom:1px solid var(--bd)}
+td{padding:11px 12px;border-bottom:1px solid var(--bd)}
+td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.n{font-weight:700}
+tr.tot td{font-weight:800;border-bottom:none}
+.card table{min-width:0}
+.card td:last-child{text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
+ul{padding-left:20px;margin:8px 0 0}li{margin:0 0 10px}
+.editing main{outline:2px dashed var(--ac);outline-offset:8px;border-radius:4px}
+@media print{nav,.tools{display:none}.tab{display:block!important;page-break-inside:avoid}body{background:#fff;color:#000}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="mu" style="margin:0">Отчёт по рекламе · сентябрь, 2026</p>
+<h1>Магнум: тату-салон и детейлинг</h1>
+<p class="mu" style="margin:0">Яндекс Директ и ВКонтакте. </p>
+<div class="tools">
+
+
+</div>
+<nav id="tabs" aria-label="Разделы отчёта">
+<button class="on" data-t="summary" type="button">Итоги</button>
+<button data-t="direct" type="button">Яндекс Директ</button>
+<button data-t="vk" type="button">ВКонтакте</button>
+<button data-t="outcome" type="button">Выводы</button>
+</nav>
+<main id="main">
+
+<section id="summary" class="tab active">
+<h2>Итоги месяца</h2>
+<p class="mu">Две площадки: Яндекс Директ и ВКонтакте</p>
+<div class="two">
+<article class="card"><h3>Яндекс Директ</h3><p class="big">366</p><p class="st">целевых действий: звонки, записи, визиты и переходы</p><p class="mu">Вложено 37 523 ₽. Цена одного действия около 103 ₽.</p></article>
+<article class="card"><h3>ВКонтакте</h3><p class="big">93</p><p class="st">новых подписчиков сообщества</p><p class="mu">Вложено 33 869 ₽. Ещё 27 дочитываний статьи на Дзен и 17 подписок на рассылку.</p></article>
+</div>
+<p class="bar">Рекламой получили 58 звонков, 56 обращений к онлайн-записи и 34 визита по данным Яндекс Карт.</p>
+<p class="mu">Всего вложено в рекламу: 71 400 ₽.</p>
+</section>
+
+<section id="direct" class="tab">
+<h2>Яндекс Директ</h2>
+<p class="mu">Поиск, РСЯ и Яндекс Карты · тату-салон и детейлинг</p>
+<div class="grid">
+<div class="kpi"><b>37 523 ₽</b><span>потрачено на рекламу</span></div>
+<div class="kpi"><b>282 799</b><span>показов объявлений</span></div>
+<div class="kpi"><b>1 478</b><span>переходов по объявлениям</span></div>
+<div class="kpi"><b>366</b><span>целевых действий</span></div>
+</div>
+<div class="tw"><table>
+<tr><th>Направление</th><th class="n">Расход</th><th class="n">Переходов</th><th class="n">Целевых действий</th><th class="n">Цена действия</th></tr>
+<tr><td>Тату-салон</td><td class="n">20 578 ₽</td><td class="n">867</td><td class="n">225</td><td class="n">91 ₽</td></tr>
+<tr><td>Детейлинг</td><td class="n">16 945 ₽</td><td class="n">611</td><td class="n">141</td><td class="n">120 ₽</td></tr>
+<tr class="tot"><td>Всего</td><td class="n">37 523 ₽</td><td class="n">1 478</td><td class="n">366</td><td class="n">103 ₽</td></tr>
+</table></div>
+<p class="mu">Целевое действие: звонок, запись, заявка, переход на сайт, построенный маршрут или визит. Цена одного перехода около 25 ₽.</p>
+<h3 style="margin-top:36px">Что делали люди после рекламы</h3>
+<p class="mu" style="margin:0">Только действия, которых было два и больше</p>
+<div class="two">
+<article class="card"><h3>Тату-салон</h3><table>
+<tr><td>Обращения к онлайн-записи (YCLIENTS)</td><td>56</td></tr>
+<tr><td>Посетили салон (Яндекс Карты)</td><td>22</td></tr>
+<tr><td>Заявки «Записаться»</td><td>19</td></tr>
+<tr><td>Переходы в соцсети</td><td>19</td></tr>
+<tr><td>Звонки</td><td>12</td></tr>
+<tr><td>Переходы в мессенджер</td><td>11</td></tr>
+<tr><td>Поехали по маршруту</td><td>11</td></tr>
+<tr><td>Отправка формы</td><td>7</td></tr>
+<tr><td>Отправили контактные данные</td><td>5</td></tr>
+</table></article>
+<article class="card"><h3>Детейлинг</h3><table>
+<tr><td>Звонки (Карты и сайт)</td><td>46</td></tr>
+<tr><td>Построили маршрут</td><td>38</td></tr>
+<tr><td>Переходы на сайт</td><td>23</td></tr>
+<tr><td>Поехали по маршруту</td><td>22</td></tr>
+<tr><td>Посетили детейлинг (Яндекс Карты)</td><td>12</td></tr>
+<tr><td>Отправили контактные данные</td><td>9</td></tr>
+<tr><td>Переходы в соцсети и мессенджер</td><td>8</td></tr>
+</table></article>
+</div>
+<p class="bar">Вместе за месяц: 58 звонков и 34 визита по данным Яндекс Карт.</p>
+</section>
+
+<section id="vk" class="tab">
+<h2>ВКонтакте</h2>
+<p class="mu">Сообщество, статья на Дзен и чат-бот с рассылкой</p>
+<div class="grid">
+<div class="kpi"><b>33 869 ₽</b><span>потрачено на рекламу</span></div>
+<div class="kpi"><b>93</b><span>новых подписчиков сообщества</span></div>
+<div class="kpi"><b>27</b><span>дочитываний статьи на Дзен</span></div>
+<div class="kpi"><b>17(+3 п.)</b><span>подписок на рассылку</span></div>
+</div>
+<div class="tw"><table>
+<tr><th>Что продвигали</th><th class="n">Результат</th><th class="n">Цена результата</th><th class="n">Расход</th></tr>
+<tr><td>Сообщество (детейлинг)</td><td class="n">93 подписчиков</td><td class="n">131,69 ₽</td><td class="n">13 492,94 ₽</td></tr>
+<tr><td>Статья на Дзен (керамика)</td><td class="n">27 дочитываний</td><td class="n">252,74 ₽</td><td class="n">6 824,20 ₽</td></tr>
+<tr><td>Чат-бот Senler (рассылка)</td><td class="n">20 подписок</td><td class="n">689,36 ₽</td><td class="n">13 787,22 ₽</td></tr>
+</table></div>
+<p class="mu">Самая доступная цена результата: подписка на сообщество, 131 ₽.</p>
+</section>
+
+<section id="outcome" class="tab">
+<h2>Выводы и планы</h2>
+<p class="mu">Что получили и что улучшим в следующем месяце</p>
+<div class="two">
+<article class="card"><h3>Что получили</h3><ul>
+<li>Директ: 366 целевых действий, около 103 ₽ за каждое</li>
+<li>Тату-салон: 56 обращений к онлайн-записи и 19 заявок «Записаться»</li>
+<li>Детейлинг: 46 звонков, 38 построенных маршрутов и 12 визитов</li>
+<li>ВКонтакте: 93 подписчиков по 131 ₽ и 27 дочитываний статьи</li>
+</ul></article>
+<article class="card"><h3>Что улучшим в следующем месяце</h3><ul>
+    <li>Креативы: обновим баннеры и тексты, проверим новые предложения</li>
+    <li>Площадки: усилим те, где действие обходится дешевле</li>
+    <li>Кампании: добавим новые типы кампаний и сегменты аудитории</li>
+    <li>Достичь планового объёма расходов за счёт повышения конверсионной эффективности рекламных кампаний.</li></li>
+</ul></article>
+</div>
+</section>
+
+</main>
+</div>
+<script>
+(function(){
+var KEY='magnum-report-v1', main=document.getElementById('main'), orig=main.innerHTML;
+var edit=document.getElementById('edit'), reset=document.getElementById('reset'), hint=document.getElementById('hint'), on=false;
+try{var s=localStorage.getItem(KEY); if(s){main.innerHTML=s;}}catch(e){}
+function show(id){
+  var tabs=main.querySelectorAll('.tab'); for(var i=0;i<tabs.length;i++){tabs[i].classList.toggle('active',tabs[i].id===id);}
+  var bs=document.querySelectorAll('#tabs button'); for(var j=0;j<bs.length;j++){bs[j].classList.toggle('on',bs[j].getAttribute('data-t')===id);}
+}
+show('summary');
+document.getElementById('tabs').addEventListener('click',function(e){var t=e.target.getAttribute('data-t'); if(t){show(t);window.scrollTo(0,0);}});
+function save(){try{localStorage.setItem(KEY,main.innerHTML);}catch(e){}}
+edit.addEventListener('click',function(){
+  on=!on; main.contentEditable=on?'true':'false';
+  document.body.classList.toggle('editing',on);
+  edit.textContent=on?'Готово':'Редактировать текст';
+  reset.hidden=!on; hint.hidden=!on;
+  if(!on){save();}
+});
+main.addEventListener('input',save);
+reset.addEventListener('click',function(){
+  try{localStorage.removeItem(KEY);}catch(e){}
+  main.innerHTML=orig; show('summary');
+});
+})();
+</script>
+</body>
+</html>
